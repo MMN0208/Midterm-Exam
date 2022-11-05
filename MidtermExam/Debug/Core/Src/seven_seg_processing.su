@@ -1,0 +1,6 @@
+../Core/Src/seven_seg_processing.c:55:6:driver7SEG	24	static
+../Core/Src/seven_seg_processing.c:62:6:resetBuffer	4	static
+../Core/Src/seven_seg_processing.c:66:6:increaseBuffer	4	static
+../Core/Src/seven_seg_processing.c:71:6:decreaseBuffer	4	static
+../Core/Src/seven_seg_processing.c:78:6:countdownBuffer	4	static
+../Core/Src/seven_seg_processing.c:84:6:display7SEG	8	static

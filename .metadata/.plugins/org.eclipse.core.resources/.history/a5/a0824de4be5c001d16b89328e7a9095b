@@ -1,0 +1,24 @@
+/*
+ * fsm_simple_buttons.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: nhatmai
+ */
+
+#include "fsm_simple_buttons.h"
+
+#define RESET_BTN	0
+#define INC_BTN		1
+#define DEC_BTN		2
+
+void fsm_simple_buttons_run(void) {
+	switch(status) {
+	case INIT:
+		// Initialize all software timers
+		setTimer1(SYSTEM_DELAY);
+		setTimer2(SYSTEM_DELAY + 1);
+		setTimer3(SYSTEM_DELAY + 2);
+
+		resetBuffer();
+	}
+}

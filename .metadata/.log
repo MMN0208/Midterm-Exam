@@ -1,0 +1,16 @@
+!SESSION 2022-11-05 10:20:57.233 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_VN
+Framework arguments:  -keyring /Users/nhatmai/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam -keyring /Users/nhatmai/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-11-05 10:21:09.486
+!MESSAGE Log4j initialized with config file /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-11-05 10:21:15.229
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-05 10:28:05.564
+!MESSAGE Indexed 'MidtermExam' (17 sources, 78 headers) in 8.97 sec: 3,631 declarations; 13,033 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)

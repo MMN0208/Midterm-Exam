@@ -88,19 +88,19 @@ void fsm_simple_buttons_run(void) {
 			display7SEG();
 		}
 
-		if(timer1_flag == 1 && is_button_hold(INC_BTN)) {
+		if(timer1_flag == 1 && is_button_hold(DEC_BTN)) {
 			setTimer1(AUTO_CHANGE);
 			decreaseBuffer();
 			display7SEG();
 		}
 
-		if(timer1_flag == 1 && is_button_hold(INC_BTN)) {
+		if(timer1_flag == 1 && is_button_hold(DEC_BTN)) {
 			setTimer1(AUTO_CHANGE);
 			decreaseBuffer();
 			display7SEG();
 		}
 
-		if(timer1_flag == 1 &&  !is_button_hold(INC_BTN)) {
+		if(timer1_flag == 1 &&  !is_button_hold(DEC_BTN)) {
 			setTimer3(IDLE_TIME);
 		}
 

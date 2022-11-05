@@ -307,12 +307,12 @@ void fsm_simple_buttons_run(void) {
  80002d4:	f000 fac4 	bl	8000860 <display7SEG>
 		}
 
-		if(timer1_flag == 1 && is_button_hold(INC_BTN)) {
+		if(timer1_flag == 1 && is_button_hold(DEC_BTN)) {
  80002d8:	4b51      	ldr	r3, [pc, #324]	; (8000420 <fsm_simple_buttons_run+0x2ac>)
  80002da:	681b      	ldr	r3, [r3, #0]
  80002dc:	2b01      	cmp	r3, #1
  80002de:	d10d      	bne.n	80002fc <fsm_simple_buttons_run+0x188>
- 80002e0:	2001      	movs	r0, #1
+ 80002e0:	2002      	movs	r0, #2
  80002e2:	f000 f9b5 	bl	8000650 <is_button_hold>
  80002e6:	4603      	mov	r3, r0
  80002e8:	2b00      	cmp	r3, #0
@@ -326,12 +326,12 @@ void fsm_simple_buttons_run(void) {
  80002f8:	f000 fab2 	bl	8000860 <display7SEG>
 		}
 
-		if(timer1_flag == 1 && is_button_hold(INC_BTN)) {
+		if(timer1_flag == 1 && is_button_hold(DEC_BTN)) {
  80002fc:	4b48      	ldr	r3, [pc, #288]	; (8000420 <fsm_simple_buttons_run+0x2ac>)
  80002fe:	681b      	ldr	r3, [r3, #0]
  8000300:	2b01      	cmp	r3, #1
  8000302:	d10d      	bne.n	8000320 <fsm_simple_buttons_run+0x1ac>
- 8000304:	2001      	movs	r0, #1
+ 8000304:	2002      	movs	r0, #2
  8000306:	f000 f9a3 	bl	8000650 <is_button_hold>
  800030a:	4603      	mov	r3, r0
  800030c:	2b00      	cmp	r3, #0
@@ -345,12 +345,12 @@ void fsm_simple_buttons_run(void) {
  800031c:	f000 faa0 	bl	8000860 <display7SEG>
 		}
 
-		if(timer1_flag == 1 &&  !is_button_hold(INC_BTN)) {
+		if(timer1_flag == 1 &&  !is_button_hold(DEC_BTN)) {
  8000320:	4b3f      	ldr	r3, [pc, #252]	; (8000420 <fsm_simple_buttons_run+0x2ac>)
  8000322:	681b      	ldr	r3, [r3, #0]
  8000324:	2b01      	cmp	r3, #1
  8000326:	d109      	bne.n	800033c <fsm_simple_buttons_run+0x1c8>
- 8000328:	2001      	movs	r0, #1
+ 8000328:	2002      	movs	r0, #2
  800032a:	f000 f991 	bl	8000650 <is_button_hold>
  800032e:	4603      	mov	r3, r0
  8000330:	2b00      	cmp	r3, #0

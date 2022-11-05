@@ -606,3 +606,42 @@
 2022-11-05 10:39:44,297 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 3413mS.
 2022-11-05 10:39:44,305 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
 2022-11-05 10:39:44,308 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2022-11-05 13:14:49,053 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 241560104 Bytes (738197504)
+2022-11-05 13:14:49,279 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 250054200 Bytes (738197504)
+2022-11-05 13:14:50,988 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 314543672 Bytes (738197504)
+2022-11-05 13:14:51,662 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: NVIC
+2022-11-05 13:14:51,673 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: SYS
+2022-11-05 13:14:51,695 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: GPIO
+2022-11-05 13:14:51,697 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: RCC
+2022-11-05 13:14:51,697 [INFO] BlockDiagram:2753 - set Specific Code input for plugin: TIM1_8F1
+2022-11-05 13:14:51,700 [INFO] CodeGenerator:690 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.6.1.202207061420//db/
+2022-11-05 13:14:52,051 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/MXTmpFiles/license.tmp_save
+2022-11-05 13:14:52,196 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/MXTmpFiles/license.tmp
+2022-11-05 13:14:52,238 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/gpio.c_save
+2022-11-05 13:14:52,355 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/gpio.c
+2022-11-05 13:14:52,358 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/gpio.h_save
+2022-11-05 13:14:52,436 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/gpio.h
+2022-11-05 13:14:52,507 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/tim.c_save
+2022-11-05 13:14:52,630 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/tim.c
+2022-11-05 13:14:52,632 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/tim.h_save
+2022-11-05 13:14:52,718 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/tim.h
+2022-11-05 13:14:52,723 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/stm32f1xx_it.c_save
+2022-11-05 13:14:52,824 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/stm32f1xx_it.c
+2022-11-05 13:14:52,826 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/stm32f1xx_it.h_save
+2022-11-05 13:14:52,903 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/stm32f1xx_it.h
+2022-11-05 13:14:52,909 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/stm32f1xx_hal_msp.c_save
+2022-11-05 13:14:53,037 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/stm32f1xx_hal_msp.c
+2022-11-05 13:14:53,040 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/MXTmpFiles/system.tmp_save
+2022-11-05 13:14:53,145 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/MXTmpFiles/system.tmp
+2022-11-05 13:14:53,157 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/stm32f1xx_hal_conf.h_save
+2022-11-05 13:14:53,285 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/stm32f1xx_hal_conf.h
+2022-11-05 13:14:53,345 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/main.h_save
+2022-11-05 13:14:53,454 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Inc/main.h
+2022-11-05 13:14:53,460 [INFO] CodeEngine:245 - oldGeneratedFile, /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/main.c_save
+2022-11-05 13:14:53,581 [INFO] CodeEngine:269 - Generated code: /Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/Core/Src/main.c
+2022-11-05 13:14:54,415 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 83mS.
+2022-11-05 13:14:54,609 [INFO] ProjectBuilder:4117 - Project Generator version: 3.17.1
+2022-11-05 13:14:55,148 [INFO] ConfigFileManager:1394 - The Die is : DIE412
+2022-11-05 13:14:58,434 [INFO] ProjectBuilder:4285 - Time for Generating toolchain IDE Files: 3824mS.
+2022-11-05 13:14:58,443 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 2mS.
+2022-11-05 13:14:58,446 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.

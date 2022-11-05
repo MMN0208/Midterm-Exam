@@ -1,5 +1,6 @@
-11:51:19 **** Incremental Build of configuration Debug for project MidtermExam ****
+12:54:56 **** Incremental Build of configuration Debug for project MidtermExam ****
 make -j7 all 
+arm-none-eabi-gcc "../Core/Src/fsm_simple_buttons.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_simple_buttons.d" -MT"Core/Src/fsm_simple_buttons.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_simple_buttons.o"
 arm-none-eabi-gcc -o "MidtermExam.elf" @"objects.list"   -mcpu=cortex-m3 -T"/Users/nhatmai/Documents/Semester 221/Microcontroller - Microprocessor/Midterm Exam/MidtermExam/STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidtermExam.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: MidtermExam.elf
  
@@ -8,7 +9,7 @@ arm-none-eabi-objdump -h -S  MidtermExam.elf  > "MidtermExam.list"
 arm-none-eabi-objcopy  -O ihex  MidtermExam.elf  "MidtermExam.hex"
 arm-none-eabi-objcopy  -O binary  MidtermExam.elf  "MidtermExam.bin"
    text	   data	    bss	    dec	    hex	filename
-   8760	    100	   1692	  10552	   2938	MidtermExam.elf
+   8768	    100	   1692	  10560	   2940	MidtermExam.elf
 Finished building: default.size.stdout
  
 Finished building: MidtermExam.hex
@@ -18,5 +19,5 @@ Finished building: MidtermExam.bin
 Finished building: MidtermExam.list
  
 
-11:51:20 Build Finished. 0 errors, 0 warnings. (took 586ms)
+12:54:58 Build Finished. 0 errors, 0 warnings. (took 1s.67ms)
 

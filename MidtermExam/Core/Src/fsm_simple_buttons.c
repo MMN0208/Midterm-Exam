@@ -149,5 +149,8 @@ void fsm_simple_buttons_run(void) {
 			decreaseBuffer();
 			display7SEG();
 		}
+		break;
+
+	default: break;
 	}
 }

@@ -48,7 +48,7 @@ void button_reading(void){
 		debounceButtonBuffer2[i] = debounceButtonBuffer1[i];
 		debounceButtonBuffer1[i] = debounceButtonBuffer0[i];
 		debounceButtonBuffer0[i] = HAL_GPIO_ReadPin(buttonPort[i], buttonPin[i]);
-		if((debounceButtonBuffer2[i] == debounceButtonBuffer1[i]) || (debounceButtonBuffer1[i] == debounceButtonBuffer0[i])) {
+		if((debounceButtonBuffer2[i] == debounceButtonBuffer1[i]) && (debounceButtonBuffer1[i] == debounceButtonBuffer0[i])) {
 			if(buttonBuffer[i] != debounceButtonBuffer0[i]) {
 				buttonBuffer[i] = debounceButtonBuffer0[i];
 				if(buttonBuffer[i] == BUTTON_IS_PRESSED) {

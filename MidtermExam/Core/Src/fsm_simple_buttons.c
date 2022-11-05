@@ -19,7 +19,7 @@ void fsm_simple_buttons_run(void) {
 	case INIT:
 		// Initialize all software timers
 		setTimer1(SYSTEM_DELAY);
-		setTimer2(SYSTEM_DELAY + 1);
+		setTimer2(SYSTEM_DELAY);
 		setTimer3(IDLE_TIME);
 
 		resetBuffer();

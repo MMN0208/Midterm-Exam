@@ -20,107 +20,85 @@ void fsm_simple_buttons_run(void) {
 		// Initialize all software timers
 		setTimer1(SYSTEM_DELAY);
 		setTimer2(SYSTEM_DELAY + 1);
+		setTimer3(IDLE_TIME);
 
 		resetBuffer();
+		status = WAIT;
+		break;
+
+	case WAIT:
 		display7SEG();
 
 		if(is_button_pressed(RESET_BTN)) {
-			resetBuffer();
-			display7SEG();
+			status = RST;
 		}
 
 		if(is_button_pressed(INC_BTN)) {
-			setTimer3(IDLE_TIME);
 			status = INC;
-			increaseBuffer();
-			display7SEG();
+		}
+
+		if(is_button_hold(INC_BTN)) {
+			setTimer3(0);
+			status = LONG_INC;
 		}
 
 		if(is_button_pressed(DEC_BTN)) {
-			setTimer3(IDLE_TIME);
 			status = DEC;
-			decreaseBuffer();
+		}
+
+		if(is_button_hold(DEC_BTN)) {
+			status = LONG_DEC;
+		}
+
+		if(timer3_flag == 1) {
+			setTimer3(AUTO_CHANGE);
+			status = AUTO;
+			countdownBuffer();
 			display7SEG();
 		}
 		break;
 
-	case INC:
-		if(is_button_pressed(INC_BTN)) {
-			setTimer3(IDLE_TIME);
-			increaseBuffer();
-			display7SEG();
-		}
+	case RST:
+		setTimer3(IDLE_TIME);
+		resetBuffer();
+		status = WAIT;
+		break;
 
+	case INC:
+		setTimer3(IDLE_TIME);
+		increaseBuffer();
+		status = WAIT;
+		break;
+
+	case DEC:
+		setTimer3(IDLE_TIME);
+		decreaseBuffer();
+		status = WAIT;
+		break;
+
+	case LONG_INC:
 		if(timer1_flag == 1 && is_button_hold(INC_BTN)) {
 			setTimer1(AUTO_CHANGE);
 			increaseBuffer();
 			display7SEG();
 		}
 
-		if(timer1_flag == 1 &&  !is_button_hold(INC_BTN)) {
+		if(!is_button_hold(INC_BTN)) {
 			setTimer3(IDLE_TIME);
-		}
-
-		if(is_button_pressed(RESET_BTN)) {
-			resetBuffer();
-			display7SEG();
-		}
-
-		if(is_button_pressed(DEC_BTN)) {
-			setTimer3(IDLE_TIME);
-			status = DEC;
-			decreaseBuffer();
-			display7SEG();
-		}
-
-		if(timer3_flag == 1) {
-			setTimer3(AUTO_CHANGE);
-			status = AUTO;
-			countdownBuffer();
-			display7SEG();
+			status = WAIT;
 		}
 		break;
 
-	case DEC:
-		if(is_button_pressed(DEC_BTN)) {
-			setTimer3(IDLE_TIME);
-			decreaseBuffer();
-			display7SEG();
-		}
-
+	case LONG_DEC:
 		if(timer1_flag == 1 && is_button_hold(DEC_BTN)) {
 			setTimer1(AUTO_CHANGE);
 			decreaseBuffer();
 			display7SEG();
 		}
 
-		if(timer1_flag == 1 && is_button_hold(DEC_BTN)) {
-			setTimer1(AUTO_CHANGE);
-			decreaseBuffer();
-			display7SEG();
-		}
-
-		if(timer1_flag == 1 &&  !is_button_hold(DEC_BTN)) {
+		if(!is_button_hold(DEC_BTN)) {
 			setTimer3(IDLE_TIME);
-		}
-
-		if(is_button_pressed(RESET_BTN)) {
-			resetBuffer();
-			display7SEG();
-		}
-
-		if(is_button_pressed(INC_BTN)) {
-			setTimer3(IDLE_TIME);
-			status = INC;
-			increaseBuffer();
-			display7SEG();
-		}
-
-		if(timer3_flag == 1) {
-			setTimer3(AUTO_CHANGE);
-			status = AUTO;
-			countdownBuffer();
-			display7SEG();
+			status = WAIT;
 		}
 		break;
 
@@ -132,22 +110,15 @@ void fsm_simple_buttons_run(void) {
 		}
 
 		if(is_button_pressed(RESET_BTN)) {
-			resetBuffer();
-			display7SEG();
+			status = RST;
 		}
 
 		if(is_button_pressed(INC_BTN)) {
-			setTimer3(IDLE_TIME);
 			status = INC;
-			increaseBuffer();
-			display7SEG();
 		}
 
 		if(is_button_pressed(DEC_BTN)) {
-			setTimer3(IDLE_TIME);
 			status = DEC;
-			decreaseBuffer();
-			display7SEG();
 		}
 		break;
 

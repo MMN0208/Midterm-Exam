@@ -36,12 +36,10 @@ static GPIO_PinState debounceButtonBuffer1[NO_OF_BUTTONS] = {BUTTON_IS_RELEASED,
 static GPIO_PinState debounceButtonBuffer2[NO_OF_BUTTONS] = {BUTTON_IS_RELEASED, BUTTON_IS_RELEASED, BUTTON_IS_RELEASED};
 //we define a flag for a button pressed more than 1 second.
 static uint8_t flagForButtonPressed[NO_OF_BUTTONS];
-static uint8_t flagForButtonDoublePressed[NO_OF_BUTTONS];
 static uint8_t flagForButtonHold[NO_OF_BUTTONS];
 //we define counter for automatically increasing the value
 //after the button is pressed more than 1 second.
 static uint16_t counterForButtonHold[NO_OF_BUTTONS] = {0, 0, 0};
-static uint16_t waitForSecondPress[NO_OF_BUTTONS] = {0, 0, 0};
 
 void button_reading(void){
 	for(int i = 0; i < NO_OF_BUTTONS; i++) {

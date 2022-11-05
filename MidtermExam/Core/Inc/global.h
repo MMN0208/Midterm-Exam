@@ -13,8 +13,12 @@
 
 typedef enum  {
 	INIT,
+	WAIT,
+	RST,
 	INC,
 	DEC,
+	LONG_INC,
+	LONG_DEC,
 	AUTO,
 } systemState;
 

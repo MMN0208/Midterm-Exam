@@ -52,7 +52,7 @@ void fsm_simple_buttons_run(void) {
 		}
 
 		if(timer3_flag == 1) {
-			setTimer3(AUTO_CHANGE);
+			setTimer1(AUTO_CHANGE);
 			status = AUTO;
 			countdownBuffer();
 			display7SEG();
@@ -104,8 +104,8 @@ void fsm_simple_buttons_run(void) {
 		break;
 
 	case AUTO:
-		if(timer3_flag == 1) {
-			setTimer3(AUTO_CHANGE);
+		if(timer1_flag == 1) {
+			setTimer1(AUTO_CHANGE);
 			countdownBuffer();
 			display7SEG();
 		}

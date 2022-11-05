@@ -11,7 +11,7 @@
 #define INC_BTN			1
 #define DEC_BTN			2
 
-#define IDLE_TIME		10000 // 10s idle time
+#define IDLE_TIME		5000 // 10s idle time
 #define AUTO_CHANGE		1000  // inc/dec counter every 1s when button is hold for >= 3s
 
 void fsm_simple_buttons_run(void) {
@@ -47,6 +47,7 @@ void fsm_simple_buttons_run(void) {
 		}
 
 		if(is_button_hold(DEC_BTN)) {
+			setTimer3(0);
 			status = LONG_DEC;
 		}
 
